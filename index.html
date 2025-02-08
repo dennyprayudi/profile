@@ -31,47 +31,47 @@
             background-color: rgba(0, 0, 0, 0.5); /* Memberikan warna latar belakang gelap pada ikon */
         }
 		
- .navbar-nav .nav-link {
-    font-size: 18px;
-    position: relative;
-    padding: 10px 15px;
-    background: white;
-    color: #003366; /* Menetapkan warna font menjadi biru tua gelap */
-    transition: all 0.3s ease-in-out;
-    border-left: 0.5px solid #ddd; /* Garis kiri dengan ketebalan 0.5px */
-    border-right: 0.5px solid #ddd; /* Garis kanan dengan ketebalan 0.5px */
-}
+		 .navbar-nav .nav-link {
+			font-size: 18px;
+			position: relative;
+			padding: 10px 15px;
+			background: white;
+			color: #003366; /* Menetapkan warna font menjadi biru tua gelap */
+			transition: all 0.3s ease-in-out;
+			border-left: 0.5px solid #ddd; /* Garis kiri dengan ketebalan 0.5px */
+			border-right: 0.5px solid #ddd; /* Garis kanan dengan ketebalan 0.5px */
+		}
 
-.navbar-nav .nav-link:hover {
-    background: #4682B4;
-    color: white;
-}
+		.navbar-nav .nav-link:hover {
+			background: #4682B4;
+			color: white;
+		}
 
-.navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    background-color: yellow;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
+		.navbar-nav .nav-link::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 5px;
+			background-color: yellow;
+			transform: scaleX(0);
+			transition: transform 0.3s ease-in-out;
+		}
 
-.navbar-nav .nav-link:hover::after {
-    transform: scaleX(1);
-}
+		.navbar-nav .nav-link:hover::after {
+			transform: scaleX(1);
+		}
 
-.navbar-nav .dropdown-toggle::after {
-    content: ' \25BC'; /* Unicode for downward arrow */
-    font-size: 18px;
-    font-weight: bold;
-    color: #007bff;
-    margin-left: 5px;
-}
+		.navbar-nav .dropdown-toggle::after {
+			content: ' \25BC'; /* Unicode for downward arrow */
+			font-size: 18px;
+			font-weight: bold;
+			color: #007bff;
+			margin-left: 5px;
+		}
 
-   .content-box {
+		.content-box {
             background:#d0e8f2;
             padding: 20px;
             border-radius: 10px;
@@ -107,13 +107,13 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
-   h1 {
-            color: #003366;
+	   h1 {
+			color: #003366;
 			align:left;
-            opacity: 0;
-            transform: translateY(-20px);
-            animation: fadeInMove 1s ease-out forwards;
-        }
+			opacity: 0;
+			transform: translateY(-20px);
+			animation: fadeInMove 1s ease-out forwards;
+		}
         @keyframes fadeInMove {
             from {
                 opacity: 0;
@@ -124,9 +124,9 @@
                 transform: translateY(0);
             }
         }
-	p{
-		color: #003366;
-	}
+		p{
+			color: #003366;
+		}
 
 		.content-box img {
            
@@ -150,11 +150,10 @@
            
             border-radius: 35% 15% 25% 10%;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        
+        }        
 		
 		
-			.content-boxb img {
+		.content-boxb img {
            
             border-radius: 5% 35% 25% 40%;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -165,6 +164,7 @@
             border-radius: 35% 15% 25% 10%;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
+		
         .whatsapp-logo {
             position: fixed;
             bottom: 20px;
@@ -185,6 +185,22 @@
             padding: 15px;
             margin-top: 30px;
         }
+		
+		.box-rounded {
+			width: 300px;
+			height: 180px;
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+			text-align: center;
+			border: 1px solid #ccc;
+			box-shadow:  
+        5px 5px 10px #003366,   /* Shadow biru */
+        -5px -5px 10px #fffdd0; /* Shadow kuning *
+			
+		}
+
     </style>
 	
 </head>
@@ -203,9 +219,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Home Visite</a>
-                    </li>
-             
+                        <a class="nav-link" href="#">Home Visite</a>
+                    </li>             
                     <li class="nav-item">
                         <a class="nav-link" href="#ngt">Pemasangan NGT</a>
                     </li>
@@ -231,30 +246,32 @@
     <section id="about" class="py-5">
         <div class="container text-center">
             <h2>Tentang Kami</h2>
-			<a href="https://api.whatsapp.com/send?phone=6281299467172" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
-    </a>
+			<div class="wrapper">
+				<a href="https://api.whatsapp.com/send?phone=6281299467172" target="_blank">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+				</a>
+			</div>
             <p class="lead">Kami menyediakan layanan terbaik untuk kebutuhan Anda.<br>Hubungi Nomer Whatsapp 0812-9946-7172 </p>
 			
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <div class="card p-4">
+                    <div class="box-rounded">
                         <h5>Profesional</h5>
                         <p>Tim kami terdiri dari para ahli di bidangnya.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-4">
+                    <div class="box-rounded">
                         <h5>Modern</h5>
                         <p>Menggunakan teknologi terbaru untuk pengalaman terbaik.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <h5>Terpercaya</h5>
-                        <p>Sudah dipercaya oleh banyak pelanggan.</p>
-                    </div>
-                </div>
+				<div class="col-md-4">
+					<div class="box-rounded">                    
+						<h5>Terpercaya</h5>
+						<p>Sudah dipercaya oleh banyak pelanggan.</p>
+					</div>
+				</div>
             </div>
         </div>
     </section> 
@@ -308,7 +325,7 @@
                 <img src="image/luka.jpeg"  alt="Pemasangan Ketater" height="400px">
                 <br>
 				<br>
-				<p class="text-justify">merawat dan mengelola luka untuk mencegah infeksi, mempercepat penyembuhan, serta mengurangi risiko komplikasi.</p>
+				<p class="text-justify">Merawat dan mengelola luka untuk mencegah infeksi, mempercepat penyembuhan, serta mengurangi risiko komplikasi.</p>
              
                 
             </div>
@@ -347,6 +364,7 @@
     </div>
 	<br><br>
 <!-- Image Slider -->
+
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
