@@ -10,7 +10,7 @@
 	<link rel="icon" href="image/logo.jpeg" type="image/icon type">
     <style>
         .carousel-item img {
-            width: 58%; /* Mengubah lebar gambar menjadi 50% */
+            width: 670px; /* Mengubah lebar gambar menjadi 50% */
             height: 500px; /* Menjaga rasio gambar tetap */
             margin-left: auto; /* Memastikan gambar berada di tengah */
             margin-right: auto; /* Memastikan gambar berada di tengah */
@@ -32,7 +32,7 @@
         }
 		
  .navbar-nav .nav-link {
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
     padding: 10px 15px;
     background: white;
@@ -41,7 +41,7 @@
     border-left: 0.5px solid #ddd; /* Garis kiri dengan ketebalan 0.5px */
     border-right: 0.5px solid #ddd; /* Garis kanan dengan ketebalan 0.5px */
 	
-    margin: 3 3px; /* Tambahkan sedikit margin antar menu */
+    
   
 }
 
@@ -110,9 +110,15 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
-   h1 {
+		h1 {
             color: #003366;
 			align:left;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInMove 1s ease-out forwards;
+        }
+		  h5 {
+            color: #003366;			
             opacity: 0;
             transform: translateY(-20px);
             animation: fadeInMove 1s ease-out forwards;
@@ -187,7 +193,7 @@
             margin-top: 30px;
         }
 		
-.container {
+		.container {
             display: flex;
             justify-content: center;
             align-items: stretch;
@@ -221,8 +227,8 @@
         }
 
         .card p {
-            font-size: 14px;
-            color: #666;
+            font-size: 16px;
+            color: #003366;
             margin-bottom: 15px;
         }
 
@@ -252,11 +258,25 @@
                 flex-direction: column;
             }
         }
-		p {
+		h6 {
             font-size: 24px;
             margin-bottom: 20px;
             text-align: center;
 			color: #003366;
+        }
+		
+		h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+			color: #003366;
+        }
+		
+		h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+			color: white;
         }
     </style>
 	
@@ -268,7 +288,7 @@
             <a class="navbar-brand" href="#">
                
                 <img src="image/logo.jpeg" height="200" width="290" alt="MDB Logo"
-        loading="lazy" class="d-inline-block align-text-top" />
+        loading="lazy" align="left" class="d-inline-block align-text-top" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -276,23 +296,23 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home Visite</a>
+                        <a class="nav-link" href="#about">Home&nbsp;Visite</a>
                     </li>
              
                     <li class="nav-item">
-                        <a class="nav-link" href="#ngt">Pemasangan NGT</a>
+                        <a class="nav-link" href="#ngt">Pemasangan&nbsp;NGT</a>
                     </li>
 					 <li class="nav-item">
-                        <a class="nav-link" href="#ketater">Pemasangan Kateter</a>
+                        <a class="nav-link" href="#ketater">Pemasangan&nbsp;Kateter</a>
                     </li>
 					 <li class="nav-item">
-                        <a class="nav-link" href="#luka">Perawatan Luka</a>
+                        <a class="nav-link" href="#luka">Perawatan&nbsp;Luka</a>
                     </li>
 					 <li class="nav-item">
-                        <a class="nav-link" href="#infus">Infus Imunne Booster</a>
+                        <a class="nav-link" href="#infus">Infus&nbsp;Imunne&nbsp;Booster</a>
                     </li>
 					 <li class="nav-item">
-                        <a class="nav-link" href="#kitanan">Khitanan Modern</a>
+                        <a class="nav-link" href="#kitanan">Khitanan&nbsp;Modern</a>
                     </li>
                 </ul>
             </div>
@@ -302,51 +322,23 @@
 	
 	<!-- About Section -->
     <section id="about" class="py-5">
-	<p>Kami menyediakan layanan terbaik untuk kebutuhan Anda.<br>Hubungi Nomer Whatsapp 0812-9946-7172 </p>
+	<h6>Kami menyediakan layanan terbaik untuk kebutuhan Anda.<br>Hubungi Nomer Whatsapp 0812-9946-7172 </h6>
 	<br><br>
         <div class="container text-center">
-           
-			<!-- <div class="wrapper">
-				<a href="https://api.whatsapp.com/send?phone=6281299467172" target="_blank">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
-				</a>
-			</div>
-           <p class="lead">Kami menyediakan layanan terbaik untuk kebutuhan Anda.<br>Hubungi Nomer Whatsapp 0812-9946-7172 </p>
-			
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <h5>Profesional</h5>
-                        <p>Tim kami terdiri dari para ahli di bidangnya.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <h5>Modern</h5>
-                        <p>Menggunakan teknologi terbaru untuk pengalaman terbaik.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <h5>Terpercaya</h5>
-                        <p>Sudah dipercaya oleh banyak pelanggan.</p>
-                    </div>
-                </div>
-            </div> -->
-			
+        			
 		 <div class="container">
 		  
-        <div class="card">
-            <h5>Profesional</h5>
-                        <p>Tim kami terdiri dari para ahli di bidangnya.</p>
-        </div>
-        <div class="card">
-              <h5>Modern</h5>
-                        <p>Menggunakan teknologi terbaru untuk pengalaman terbaik.</p>
-        </div>
-        <div class="card">
+			<div class="card">
+				<h5>Profesional</h5>
+				<h3>Tim kami terdiri dari para ahli di bidangnya.</h3>
+			</div>
+			<div class="card">
+				  <h5>Modern</h5>
+							<h3>Menggunakan teknologi terbaru untuk pengalaman terbaik.</h3>
+			</div>
+			<div class="card">
            <h5>Terpercaya</h5>
-                        <p>Sudah dipercaya oleh banyak pelanggan.</p>
+                        <h3>Sudah dipercaya oleh banyak pelanggan.</h3>
         </div>
     </div>
         </div>
@@ -393,20 +385,38 @@
         </div>
     </div>
 	
-	<div id="luka" class="container mt-5">
+		<div id="luka" class="container mt-5">
         <div class="row">
-            <div class="col-md-8 offset-md-2 content-boxb">
+            <div class="col-md-8 offset-md-2 content-boxa">
                 <h1 class="text-center">Perawatan Luka</h1>
 				<br><br>
-                <img src="image/luka.jpeg"  alt="Pemasangan Ketater" height="400px">
+                <img src="image/luka.jpeg"  alt="Perawatan Luka" height="400px">
                 <br>
 				<br>
 				<p class="text-justify">Merawat dan mengelola luka untuk mencegah infeksi, mempercepat penyembuhan, serta mengurangi risiko komplikasi.</p>
-             
+                <p class="text-justify">Berikut adalah Perawatan Luka Berdasarkan Metode Medis
+
+    Perawatan Luka Kering
+
+    Luka dibiarkan terbuka agar cepat mengering dan sembuh secara alami.
+    Digunakan pada luka kecil yang tidak mudah terinfeksi.
+
+Perawatan Luka Basah (Moist Wound Healing)
+
+    Luka ditutup dengan perban khusus yang menjaga kelembaban agar penyembuhan lebih cepat.
+    Cocok untuk luka bakar, luka diabetes, dan luka kronis.
+
+Perawatan Luka dengan Teknologi Modern
+
+    Negative Pressure Wound Therapy (NPWT): Menggunakan tekanan negatif untuk mempercepat penyembuhan luka kronis.
+    Skin Grafting (Cangkok Kulit): Untuk luka berat yang sulit sembuh, seperti luka bakar dalam.
+    Hyperbaric Oxygen Therapy (HBOT): Menggunakan oksigen bertekanan tinggi untuk membantu penyembuhan luka kronis.
+				</p>
                 
             </div>
         </div>
     </div>
+
 	<br>
 	
 	
@@ -415,7 +425,7 @@
             <div class="col-md-8 offset-md-2 content-boxa">
                 <h1 class="text-center">Infuse Imunne Booster</h1>
 				<br><br>
-                <img src="image/infus.jpeg"  alt="Pemasangan Ketater" height="400px">
+                <img src="image/infus.jpeg"  alt="Infus Imunner Booster" height="400px">
                 <br>
 				<br>
 				<p class="text-justify">Mengacu pada terapi infus yang mengandung vitamin, mineral, dan antioksidan untuk meningkatkan daya tahan tubuh.</p>
@@ -439,6 +449,56 @@
         </div>
     </div>
 	<br><br>
+	
+	<div id="khitan" class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 content-boxa">
+                <h1 class="text-center">Khitanan Moderen</h1>
+				<br><br>
+                <img src="image/khitanan.jpeg"  alt="Khitanan Moderen" height="400px">
+                <br>
+				<br>
+				<p class="text-justify">Khitan (sunat) modern kini lebih cepat, minim nyeri, dan mempercepat penyembuhan dibandingkan metode tradisional. Berikut beberapa metode khitan modern yang umum digunakan:</p>
+                <p class="text-justify">Metode Khitan Modern: 
+
+    1.Metode Klem (Clamp)
+        Menggunakan alat penjepit khusus seperti Gomco Clamp, Mogen Clamp, atau Alisklamp.
+        Tidak memerlukan jahitan.
+        Minim perdarahan dan prosesnya cepat (sekitar 10-15 menit).
+        Waktu penyembuhan sekitar 5-7 hari.
+
+    2.Metode Cauter (Laser)
+        Menggunakan alat listrik atau laser untuk memotong dan langsung membakar pembuluh darah agar tidak berdarah.
+        Minim perdarahan dan lebih steril.
+        Penyembuhan lebih cepat (5-7 hari).
+
+    3.Metode Stapler
+        Menggunakan alat khusus berbentuk cincin dengan pisau yang langsung menjahit luka menggunakan staples mini.
+        Proses cepat (hanya sekitar 5 menit).
+        Staples akan lepas sendiri setelah beberapa hari.
+
+    4.Metode Lem (Tissue Adhesive)
+        Menggunakan lem medis khusus untuk menutup luka setelah pemotongan.
+        Tidak memerlukan jahitan.
+        Proses lebih cepat dan tanpa perban.
+
+    5.Metode Konvensional dengan Jahitan
+        Masih digunakan, tetapi lebih jarang dibanding metode di atas.
+        Memerlukan jahitan dan penyembuhan lebih lama (sekitar 1-2 minggu).</p>
+	
+	<p class="text-justify">Keunggulan Khitan Modern:
+
+✅ Minim nyeri (bisa menggunakan anestesi lokal).
+✅ Cepat sembuh dibanding metode tradisional.
+✅ Minim perdarahan dan lebih steril.
+✅ Proses lebih cepat, sekitar 5-15 menit.
+✅ Cocok untuk segala usia, termasuk bayi dan dewasa.</p>
+             
+                
+            </div>
+        </div>
+    </div>
+	<br><br>
 <!-- Image Slider -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
@@ -451,28 +511,28 @@
             <div class="carousel-item active">
                 <img src="image/gambar1.jpeg" class="d-block" alt="Slide 1">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Perawatan Luka</h5>
+					<h2>Perawatan Luka</h2>
 					
 				</div>
             </div>
             <div class="carousel-item">
                 <img src="image/gambar20.jpg" class="d-block" alt="Slide 2">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Home Visit</h5>
+					<h2>Home Visit</h2>
 					
 				</div>
             </div>
             <div class="carousel-item">
                 <img src="image/infus.jpeg" class="d-block" alt="Slide 3">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Infus Imunne Booster</h5>
+					<h2>Infus Imunne Booster</h2>
 					
 				</div>
             </div>
 			 <div class="carousel-item">
                 <img src="image/gambar4.jpeg" class="d-block" alt="Slide 4">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Pemasangan Ketater</h5>
+					<h2>Pemasangan Ketater</h2>
 					
 				</div>
             </div>
@@ -506,7 +566,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 FIrCare. All Rights Reserved.</p>
+        <p>&copy; 2024 FirCare. All Rights Reserved.</p>
     </footer>
 
     <!-- Bootstrap JavaScript -->
